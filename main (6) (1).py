@@ -148,7 +148,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Ok... Command Nhi Bataunga **Bot Made BY @inventor_king_09**🔍\n\n"
+        "Checking status Ok... Command Nhi Bataunga **Bot Made BY @inventor_king_24**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
@@ -165,7 +165,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"@inventor_king_09"
+    credit = f"@inventor_king_24"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -281,10 +281,10 @@ async def txt_handler(bot: Client, m: Message):
              #url = f"https://player.muftukmall.site/?id={id}"
             #elif '/master.mpd' in url:
              #id =  url.split("/")[-2]
-             #url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token={raw_text4}"
+             #url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={pw_token}"
             #url = f"https://madxapi-d0cbf6ac738c.herokuapp.com/{id}/master.m3u8?token={raw_text4}"
             elif "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
-             url = f"https://pwplayer-38c1ae95b681.herokuapp.com/pw?url={url}&token={raw_text4}"
+             url = f"https://anonymouspwplayerrr-3dba7e3fb6a8.herokuapp.com/pw?url={url}&token={pw_token}"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]} {my_name}'
@@ -310,8 +310,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}.✦\n**╰─────╯\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Resolution➥{res}\n├── Extention➥@inventor_king_09.mkv\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️@inventor_king_09❤✦••┈•'
-                cc1 = f'**📁 PDF_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}✦\n**╰─────╯.\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Extention➥@inventor_king_09.pdf\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️@inventor_king_09❤✦••┈•**'
+                cc = f'**🎞️ VID_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}.✦\n**╰─────╯\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Resolution➥{res}\n├── Extention➥जाटⁱˢß𝐚𝐜𝐤ツ.mkv\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️जाटⁱˢß𝐚𝐜𝐤ツ❤✦••┈•'
+                cc1 = f'**📁 PDF_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}✦\n**╰─────╯.\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Extention➥जाटⁱˢß𝐚𝐜𝐤ツ.pdf\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️जाटⁱˢß𝐚𝐜𝐤ツ❤✦••┈•**'
                     
                 
                 if "drive" in url:
@@ -373,7 +373,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"❊⇅ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗜𝗡𝗚 🤘❊ »\n\n☪ Title:- `{name}\n\n💎 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ ➥@@inventor_king_09\n\n🤴 जाटⁱˢß𝐚𝐜𝐤ツ"
+                    Show = f"❊⇅ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗜𝗡𝗚 🤘❊ »\n\n☪ Title:- `{name}\n\n💎 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ ➥@@inventor_king_24\n\n🤴 जाटⁱˢß𝐚𝐜𝐤ツ"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -390,7 +390,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("🎖𝗗𝗢𝗡𝗘🏆 Download By @inventor_king_09")
+    await m.reply_text("🎖𝗗𝗢𝗡𝗘🏆 Download By @inventor_king_24")
 
 # Advance
 
@@ -401,7 +401,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"@inventor_king_09"
+    credit = f"@inventor_king_24"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -544,8 +544,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}.✦\n**╰─────╯\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Resolution➥{res}\n├── Extention➥@inventor_king_09.mkv\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️@inventor_king_09❤✦••┈•'
-                cc1 = f'**📁 PDF_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}✦\n**╰─────╯.\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Extention➥@inventor_king_09.pdf\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️@inventor_king_09❤✦••┈•**'
+                cc = f'**🎞️ VID_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}.✦\n**╰─────╯\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Resolution➥{res}\n├── Extention➥जाटⁱˢß𝐚𝐜𝐤ツ.mkv\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️जाटⁱˢß𝐚𝐜𝐤ツ❤✦••┈•'
+                cc1 = f'**📁 PDF_ID:\n╭─────╮**\n✦ {str(count).zfill(3)}✦\n**╰─────╯.\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➺ {name1} \n├── Extention➥जाटⁱˢß𝐚𝐜𝐤ツ.pdf\n\n<pre><code>📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘➺ {b_name}</code></pre>\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽ {CR}\n\n**•┈••✦❤️जाटⁱˢß𝐚𝐜𝐤ツ❤✦••┈•**'
                     
                 
                 if "drive" in url:
@@ -607,7 +607,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ ➥@inventor_king_09\n\n🤴 जाटⁱˢß𝐚𝐜𝐤ツ"
+                    Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ ➥@inventor_king_24\n\n🤴 जाटⁱˢß𝐚𝐜𝐤ツ"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -624,7 +624,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("DONE🌾 Download By @inventor_king_09")
+    await m.reply_text("DONE🌾 Download By @inventor_king_24")
 
 
 
