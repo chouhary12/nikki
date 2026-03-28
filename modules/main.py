@@ -273,12 +273,11 @@ async def txt_handler(bot: Client, m: Message):
                         url = re.search(r"(https://.*?playlist.m3u8.*?)\"", text).group(1)
 
             elif 'classplusapp' in url or "testbook.com" in url or "classplusapp.com/drm" in url or "media-cdn.classplusapp.com/drm" in url:
-                url, contentId = url.split('&contentHashIdl=')
+                url, contentId = url.split('&')
                 
                 headers = {
                     'host': 'api.classplusapp.com',
-                    'x-access-token': f'
-eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYzNTU1MzA0LCJvcmdJZCI6MTAwNTg1OSwidHlwZSI6MSwibW9iaWxlIjoiOTE3NTY4Mjg3NjM5IiwibmFtZSI6Ik1hbmlzaCIsImVtYWlsIjoibTc1NjgyODc2MzlAZ21haWwuY29tIiwiaXNJbnRlcm5hdGlvbmFsIjowLCJkZWZhdWx0TGFuZ3VhZ2UiOiJFTiIsImNvdW50cnlDb2RlIjoiSU4iLCJjb3VudHJ5SVNPIjoiOTEiLCJ0aW1lem9uZSI6IkdNVCs1OjMwIiwiaXNEaXkiOnRydWUsIm9yZ0NvZGUiOiJidWlqamsiLCJpc0RpeVN1YmFkbWluIjowLCJmaW5nZXJwcmludElkIjoidzhWN2JKY2M2Uld6M2xRaWlsTDNUNnp0a1VjNjVFMHciLCJpYXQiOjE3NzQ3MTM0NzYsImV4cCI6MTc3NTMxODI3Nn0.FMGwX9qngdKYdGBUnoDrmsg5SQu3BY3xM6hCv6BYgDeQu64cmc5fEO2lCT3dF0Fd',    
+                    'x-access-token': f'{cp_token}',    
                     'accept-language': 'EN',
                     'api-version': '18',
                     'app-version': '1.4.73.2',
@@ -298,13 +297,7 @@ eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYzNTU1MzA0LCJvcmdJZCI6MTAwNTg1OSw
                     'offlineDownload': "false"
                 }
 
-                res = requests.get("https://api.classplusapp.com/cams/uploader/video/jw-signed-url", params=params, headers=headers).json()
-                
-                if "testbook.com" in url or "classplusapp.com/drm" in url or "media-cdn.classplusapp.com/drm" in url:
-                    url = res['drmUrls']['manifestUrl']
-                    
-                else:
-                    url = res["url"]
+                url = requests.get("https://api.classplusapp.com/cams/uploader/video/jw-signed-url", params=params, headers=headers).json().get("url")
 
 
             
